@@ -8,8 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        myGreen: "#0CB08A",
+      },
+      borderWidth: {
+        3: "3px",
+      },
+      backgroundColor: {
+        ligthTheme: "#FDFDFD",
       },
     },
   },
