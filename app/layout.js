@@ -12,8 +12,12 @@ export default function RootLayout({ children }) {
   return (
     <Provider store={store}>
       <html lang="en">
-        <NavBar />
         <body className={`${inter.className}antialiased  bg-black`}>
+          <NavBar
+            className={
+              "ml-[150px] fixed top-1/2 -translate-y-1/2 -mt-16 space-y-16"
+            }
+          />
           {children}
         </body>
       </html>
