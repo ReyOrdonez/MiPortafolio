@@ -14,7 +14,7 @@ export default {
         3: "3px",
       },
       backgroundColor: {
-        ligthTheme: "#FDFDFD",
+        darkTheme: "#0B0B0B",
       },
     },
   },
