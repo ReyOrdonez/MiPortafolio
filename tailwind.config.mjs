@@ -15,6 +15,7 @@ export default {
       },
       backgroundColor: {
         darkTheme: "#0B0B0B",
+        myGray: "#1A1A1A",
       },
     },
   },

@@ -6,7 +6,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
 const ContactButton = ({ className }) => {
   return (
     <button
-      className={`transition-all duration-[199ms] hover:text-green-950 hover:border-green-950 text-myGreen border-solid border-[3px] border-myGreen px-8 py-4 ${poppins.className} text-[28px] font-semibold rounded-sm ${className}`}
+      className={`w-auto transition-all duration-[199ms] hover:text-green-950 hover:border-green-950 text-myGreen border-solid border-[3px] border-myGreen ${poppins.className} font-semibold rounded-md ${className}`}
     >
       Contact Me!
     </button>
