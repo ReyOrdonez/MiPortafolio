@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[3rem]  text-left;
+  }
+  h2 {
+    @apply text-[1.5rem]  text-left;
+  }
+  h3 {
+    @apply text-[0.6rem]  text-left;
+  }
+  p {
+    @apply text-sm/7;
+  }
+  label {
+    @apply text-myGreen;
+  }
+}
