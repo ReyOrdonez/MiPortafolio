@@ -4,16 +4,16 @@
 
 @layer base {
   h1 {
-    @apply text-[3rem]  text-left;
+    @apply text-[3rem]  text-left font-poppins;
   }
   h2 {
-    @apply text-[1.5rem]  text-left;
+    @apply text-[1.5rem]  text-left font-poppins;
   }
   h3 {
-    @apply text-[0.6rem]  text-left;
+    @apply text-[0.8rem]  text-left font-poppins;
   }
   p {
-    @apply text-sm/7;
+    @apply text-sm/7 font-inter;
   }
   label {
     @apply text-myGreen;

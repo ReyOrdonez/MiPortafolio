@@ -1,17 +1,17 @@
 "use client";
 import { useState } from "react";
 
-const NavBarMobile = ({ className }) => {
+const NavBarMobile = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <div
-      className={` z-40 fixed flex ${className} transform transition-left duration-[120ms] ease-in left-[-70%] ${
+      className={` z-40 fixed flex transform transition-left duration-[120ms] ease-in left-[-70%] ${
         open == false ? "left-[-70%]" : "left-[0]"
       }`}
     >
       <div
-        className={`opacity-90 flex flex-col text-white bg-darkTheme p-12 h-screen w-[70vw]`}
+        className={`opacity-90 flex flex-col text-white bg-darkTheme p-12 h-screen w-[70vw] font-inter`}
       >
         <a className="group mb-12 text-[20px] hover:text-myGreen">
           Home

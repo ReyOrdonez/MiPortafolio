@@ -10,12 +10,13 @@ export default {
       colors: {
         myGreen: "#0CB08A",
       },
-      borderWidth: {
-        3: "3px",
-      },
       backgroundColor: {
         darkTheme: "#0B0B0B",
         myGray: "#1A1A1A",
+      },
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"],
+        inter: ["var(--font-inter)", "arial"],
       },
     },
   },
