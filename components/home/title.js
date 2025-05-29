@@ -1,10 +1,10 @@
-import React from "react";
+"use client";
 
 import ContactButton from "@/components/contactButton/contactButton";
 
-const Main = () => {
+const Title = () => {
   return (
-    <main
+    <section
       id="Home"
       className={`h-screen flex flex-col items-center text-center snap-center`}
     >
@@ -17,8 +17,8 @@ const Main = () => {
         </h3>
         <ContactButton className="ml-0 text-[1.8rem] mb-44 p-2 mt-[20%]" />
       </div>
-    </main>
+    </section>
   );
 };
 
-export default Main;
+export default Title;

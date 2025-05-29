@@ -1,17 +1,17 @@
 "use client";
 
-import Main from "@/components/main/main";
+import Title from "@/components/home/title";
 import AboutMe from "@/components/aboutMe/aboutMe";
 import ToggleThemeButtonMobile from "@/components/toggleThemeButtonMobile/toggleThemeButtonMobile";
-
-import { Poppins, Inter } from "next/font/google";
+import Skills from "@/components/skills/skills";
 
 export default function Home() {
   return (
-    <div className="text-center text-white snap-y overflow-y-scroll snap-mandatory h-screen">
+    <main className="text-center text-white snap-y overflow-y-scroll snap-mandatory h-screen">
       <ToggleThemeButtonMobile className="fixed top-0 right-0 mt-4" />
-      <Main />
+      <Title />
       <AboutMe />
-    </div>
+      <Skills />
+    </main>
   );
 }
