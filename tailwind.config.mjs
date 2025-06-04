@@ -18,6 +18,9 @@ export default {
         poppins: ["var(--font-poppins)", "sans-serif"],
         inter: ["var(--font-inter)", "arial"],
       },
+      boxShadow: {
+        custom: "2px 2px 1px 2px rgba(255, 255, 255, 0.21)",
+      },
     },
   },
   plugins: [],

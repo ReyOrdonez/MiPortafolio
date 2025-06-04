@@ -19,3 +19,9 @@
     @apply text-myGreen;
   }
 }
+
+@layer utilities {
+  .scrollbar-visible {
+    overflow-y: scroll;
+  }
+}

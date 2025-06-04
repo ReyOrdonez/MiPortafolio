@@ -4,6 +4,7 @@ import Title from "@/components/home/title";
 import AboutMe from "@/components/aboutMe/aboutMe";
 import ToggleThemeButtonMobile from "@/components/toggleThemeButtonMobile/toggleThemeButtonMobile";
 import Skills from "@/components/skills/skills";
+import Projects from "@/components/projects/projects";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Title />
       <AboutMe />
       <Skills />
+      <Projects />
     </main>
   );
 }

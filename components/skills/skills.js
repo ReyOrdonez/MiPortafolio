@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <section
       id="Myskills"
-      className={`h-screen ml-5 pb- text-left snap-center flex flex-col justify-center`}
+      className={`h-screen mx-5 pb- text-left snap-center flex flex-col justify-center`}
     >
       <h2 className="pb-10">My skills</h2>
       <div className="flex flex-wrap justify-between">
