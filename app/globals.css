@@ -1,19 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*Fontsize = preFontsize + (preFontsize * 0.17)*/
 @layer base {
   h1 {
-    @apply text-[3rem]  text-left font-poppins;
+    @apply text-[3rem] text-left font-poppins md:text-[3.5rem];
   }
   h2 {
-    @apply text-[1.5rem]  text-left font-poppins;
+    @apply text-[1.5rem] text-left font-poppins md:text-[1.7rem];
   }
   h3 {
-    @apply text-[0.8rem]  text-left font-poppins;
+    @apply text-[0.95rem] text-left font-poppins;
   }
   p {
-    @apply text-sm/7 font-inter;
+    @apply text-sm/7 font-inter md:text-[0.9rem];
   }
   label {
     @apply text-myGreen;
