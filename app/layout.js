@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import store from "../redux/store";
 import NavBar from "@/components/navBar/navBar";
 import NavBarMobile from "@/components/navBarMobile/navBarMobile";
+import { useIsMobile } from "./hooks/useIsMobile";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,16 +20,16 @@ const inter = Inter({
 });
 
 export default function RootLayout({ children }) {
+  const isMobile = useIsMobile();
   return (
     <Provider store={store}>
-      <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
+      <html
+        lang="en"
+        className={`md:text-[18px] lg:text-[20px] ${poppins.variable} ${inter.variable}`}
+      >
         <body className={`antialiased  bg-black`}>
-          <NavBar
-            className={
-              "hidden lg:flex ml-[150px] fixed top-1/2 -translate-y-1/2 -mt-16 space-y-16"
-            }
-          />
-          <NavBarMobile />
+          {isMobile == true ? <NavBar /> : <NavBarMobile />}
+
           {children}
         </body>
       </html>

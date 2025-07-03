@@ -6,26 +6,26 @@ const NavBarMobile = () => {
 
   return (
     <div
-      className={` z-40 fixed flex transform transition-left duration-[120ms] ease-in left-[-70%] ${
-        open == false ? "left-[-70%]" : "left-[0]"
+      className={` z-40 fixed flex transform transition-left duration-[120ms] ease-in ${
+        open == false ? "left-[-70%] lg:left-[-40%]" : "left-[0]"
       }`}
     >
       <div
-        className={`opacity-90 flex flex-col text-white bg-darkTheme p-12 h-screen w-[70vw] font-inter`}
+        className={`opacity-90 flex flex-col text-white bg-darkTheme p-12 h-screen w-[70vw] lg:w-[40vw] font-inter`}
       >
-        <a className="group mb-12 text-[20px] hover:text-myGreen">
+        <a className="group nav">
           Home
           <div className="bg-myGreen min-h-1 mr-[100%] group-hover:mx-0 transition-all duration-[190ms] ease-linear rounded-[1px]"></div>
         </a>
-        <a className="group mb-12 text-[20px] hover:text-myGreen">
+        <a className="group nav">
           About
           <div className="bg-myGreen min-h-1 mr-[100%] group-hover:mx-0 transition-all duration-[190ms] ease-linear rounded-[1px]"></div>
         </a>
-        <a className="group mb-12 text-[20px] hover:text-myGreen">
+        <a className="group nav">
           My skills
           <div className="bg-myGreen min-h-1 mr-[100%] group-hover:mx-0 transition-all duration-[190ms] ease-linear rounded-[1px]"></div>
         </a>
-        <a className="group mb-12 text-[20px] hover:text-myGreen">
+        <a className="group nav">
           Projects
           <div className="bg-myGreen min-h-1 mr-[100%] group-hover:mx-0 transition-all duration-[190ms] ease-linear rounded-[1px]"></div>
         </a>

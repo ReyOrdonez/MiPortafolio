@@ -10,7 +10,7 @@ const ProjectCard = ({ title, desc, images, technologies }) => {
 
   return (
     <div
-      className={`bg-zinc-900 p-3 rounded-[4px] max-w-[360px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
+      className={`bg-zinc-900 p-3 rounded-[4px] max-w-[360px] lg:max-w-[450px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
         open == true ? "max-h-[1000px]" : "max-h-[7.5rem]"
       }`}
     >
@@ -22,7 +22,7 @@ const ProjectCard = ({ title, desc, images, technologies }) => {
       </div>
 
       <p
-        className={` text-sm/8 mb-3 transition-all duration-150 ${
+        className={` mb-3 transition-all duration-150 leading-8 ${
           open == true
             ? ""
             : "text-transparent bg-clip-text bg-gradient-to-b from-white to-transparent"
@@ -30,7 +30,7 @@ const ProjectCard = ({ title, desc, images, technologies }) => {
       >
         {desc}
       </p>
-      <div className="imageContainer flex overflow-x-scroll snap-x snap-mandatory scrollbar-y-visible">
+      <div className="imageContainer flex overflow-x-scroll snap-x snap-mandatory">
         {images.map((src, key) => {
           return (
             <Image

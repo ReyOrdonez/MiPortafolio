@@ -11,11 +11,11 @@ const Title = () => {
       <div className="max-w-screen-sm mt-[25vh]">
         <h1 className="text-myGreen ml-5">Hello!</h1>
         <h2 className="ml-5">My name is Rey Isaac</h2>
-        <h3 className="mt-3 mb-12 ml-5">
+        <h3 className="mt-3 mb-12 ml-5 opacity-70">
           Code, design, interaction. This is my portfolio, where creativity
           meets technology.
         </h3>
-        <ContactButton className="ml-0 text-[1.8rem] mb-44 p-2 mt-[10vh]" />
+        <ContactButton className="ml-0 text-[1.8rem] mb-44 p-4 mt-[10vh]" />
       </div>
     </section>
   );

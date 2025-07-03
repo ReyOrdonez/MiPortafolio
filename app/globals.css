@@ -1,27 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*Fontsize = preFontsize + (preFontsize * 0.17)*/
+
 @layer base {
   h1 {
-    @apply text-[3rem] text-left font-poppins md:text-[3.5rem];
+    @apply text-[3.5rem] text-left font-poppins;
   }
   h2 {
-    @apply text-[1.5rem] text-left font-poppins md:text-[1.7rem];
+    @apply text-[1.5rem] text-left font-poppins;
   }
   h3 {
     @apply text-[0.95rem] text-left font-poppins;
   }
   p {
-    @apply text-sm/7 font-inter md:text-[0.9rem];
+    @apply text-sm/8 font-inter;
   }
   label {
     @apply text-myGreen;
+  }
+  .nav {
+    @apply w-40 mb-12 text-[1.4rem] hover:text-myGreen;
   }
 }
 
 @layer utilities {
   .scrollbar-visible {
     overflow-y: scroll;
+  }
+  .hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
 }
