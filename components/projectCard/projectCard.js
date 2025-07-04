@@ -17,15 +17,13 @@ const ProjectCard = ({ title, desc, images, technologies }) => {
       <div className="flex justify-between items-center">
         <h3 className="text-myGreen text-[1.2rem]">{title}</h3>
         <button onClick={() => setOpen(!open)}>
-          <ChevronUp className="h-10 w-10" />
+          <ChevronUp className="text-white h-10 w-10 " />
         </button>
       </div>
 
       <p
-        className={` mb-3 transition-all duration-150 leading-8 ${
-          open == true
-            ? ""
-            : "text-transparent bg-clip-text bg-gradient-to-b from-white to-transparent"
+        className={`text-white mb-3 transition-all duration-150 leading-8 ${
+          open == true ? "" : "text-opacity-65"
         }`}
       >
         {desc}

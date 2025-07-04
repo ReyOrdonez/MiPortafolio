@@ -3,7 +3,7 @@
 const NavBar = () => {
   return (
     <div
-      className={`flex flex-col text-white text-[28px] fixed top-[50%] translate-y-[-50%] ml-8`}
+      className={`flex flex-col text-[28px] fixed top-[50%] translate-y-[-50%] ml-8`}
     >
       <a className="group nav">
         Home

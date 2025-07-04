@@ -7,6 +7,7 @@ import store from "../redux/store";
 import NavBar from "@/components/navBar/navBar";
 import NavBarMobile from "@/components/navBarMobile/navBarMobile";
 import { useIsMobile } from "./hooks/useIsMobile";
+import ThemeManager from "@/components/themeManager/themeManager";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,7 +28,10 @@ export default function RootLayout({ children }) {
         lang="en"
         className={`md:text-[18px] lg:text-[20px] ${poppins.variable} ${inter.variable}`}
       >
-        <body className={`antialiased  bg-black`}>
+        <ThemeManager />
+        <body
+          className={`antialiased bg-[rgb(235,235,235)] text-black dark:bg-black dark:text-white transition-colors duration-200`}
+        >
           {isMobile == true ? <NavBar /> : <NavBarMobile />}
 
           {children}
