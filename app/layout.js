@@ -8,6 +8,8 @@ import NavBar from "@/components/navBar/navBar";
 import NavBarMobile from "@/components/navBarMobile/navBarMobile";
 import { useIsMobile } from "./hooks/useIsMobile";
 import ThemeManager from "@/components/themeManager/themeManager";
+import TriangleGenerator from "@/components/triangleGenerator/triangleGenerator";
+import ResponsiveNavbarAndTriangles from "@/components/responsiveNavbarAndTriangles/responsiveNavbarAndTriangles";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,7 +23,6 @@ const inter = Inter({
 });
 
 export default function RootLayout({ children }) {
-  const isMobile = useIsMobile();
   return (
     <Provider store={store}>
       <html
@@ -32,8 +33,7 @@ export default function RootLayout({ children }) {
         <body
           className={`antialiased bg-[rgb(235,235,235)] text-black dark:bg-black dark:text-white transition-colors duration-200`}
         >
-          {isMobile == true ? <NavBar /> : <NavBarMobile />}
-
+          {<ResponsiveNavbarAndTriangles />}
           {children}
         </body>
       </html>
