@@ -5,7 +5,7 @@ import ProjectCard from "../projectCard/projectCard";
 const Projects = () => {
   return (
     <section
-      id="Myskills"
+      id="MyProjects"
       className={`h-screen min-h-screen text-left flex flex-col snap-start overflow-scroll hide-scrollbar`}
     >
       <h2 className="mb-14 mt-28 mx-5 lg:ml-[20vw]">My projects</h2>

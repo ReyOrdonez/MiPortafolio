@@ -10,7 +10,7 @@ const ProjectCard = ({ title, desc, images, technologies }) => {
 
   return (
     <div
-      className={`bg-zinc-900 p-3 rounded-[4px] max-w-[360px] lg:max-w-[450px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
+      className={`bg-zinc-900 px-5 py-3 rounded-[20px] max-w-[340px] lg:max-w-[470px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
         open == true ? "max-h-[1000px]" : "max-h-[7.5rem]"
       }`}
     >

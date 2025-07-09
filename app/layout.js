@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
     <Provider store={store}>
       <html
         lang="en"
-        className={`md:text-[18px] lg:text-[20px] ${poppins.variable} ${inter.variable}`}
+        className={` md:text-[18px] lg:text-[20px] ${poppins.variable} ${inter.variable}`}
       >
         <ThemeManager />
         <body

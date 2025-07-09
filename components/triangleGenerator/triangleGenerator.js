@@ -18,7 +18,7 @@ const TriangleGenerator = ({ trianglesNumber }) => {
     };
   }, []);
   return (
-    <div className="fixed w-[100vw] pointer-events-none top-[-5%]">
+    <div className="fixed w-[100vw] pointer-events-none top-[-7%] z-[-10]">
       {triangleArray.map((_, key) => (
         <Triangle key={key} />
       ))}

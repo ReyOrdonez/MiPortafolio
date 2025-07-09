@@ -8,7 +8,7 @@ import Projects from "@/components/projects/projects";
 
 export default function Home() {
   return (
-    <main className="text-center snap-y overflow-y-scroll snap-mandatory h-screen hide-scrollbar lg:ml-[6vw]">
+    <main className="scroll-smooth text-center snap-y overflow-y-scroll snap-mandatory h-screen hide-scrollbar lg:ml-[6vw]">
       <ToggleThemeButtonMobile className="fixed top-0 right-0 mt-4" />
       <Title />
       <AboutMe />

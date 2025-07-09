@@ -13,19 +13,19 @@ const NavBarMobile = () => {
       <div
         className={`opacity-90 flex flex-col text-white bg-darkTheme p-12 h-screen w-[70vw] lg:w-[40vw] font-inter`}
       >
-        <a className="group nav">
+        <a href="#Home" className="group nav">
           Home
           <div className="bg-myGreen min-h-1 mr-[100%] group-hover:mx-0 transition-all duration-[190ms] ease-linear rounded-[1px]"></div>
         </a>
-        <a className="group nav">
+        <a href="#About" className="group nav">
           About
           <div className="bg-myGreen min-h-1 mr-[100%] group-hover:mx-0 transition-all duration-[190ms] ease-linear rounded-[1px]"></div>
         </a>
-        <a className="group nav">
+        <a href="#Myskills" className="group nav">
           My skills
           <div className="bg-myGreen min-h-1 mr-[100%] group-hover:mx-0 transition-all duration-[190ms] ease-linear rounded-[1px]"></div>
         </a>
-        <a className="group nav">
+        <a href="#MyProjects" className="group nav">
           Projects
           <div className="bg-myGreen min-h-1 mr-[100%] group-hover:mx-0 transition-all duration-[190ms] ease-linear rounded-[1px]"></div>
         </a>
