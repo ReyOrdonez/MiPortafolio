@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeManager />
         <body
-          className={`antialiased bg-[rgb(235,235,235)] text-black dark:bg-black dark:text-white transition-colors duration-200`}
+          className={`antialiased bg-[rgb(235,235,235)] text-black dark:bg-black dark:text-white transition-colors duration-100`}
         >
           {<ResponsiveNavbarAndTriangles />}
           {children}

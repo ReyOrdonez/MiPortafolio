@@ -6,7 +6,7 @@ const AboutMe = () => {
       id="About"
       className={`h-screen mx-5 pb- text-left snap-center flex flex-col justify-center lg:items-center`}
     >
-      <div className="flex flex-col gap-8 bg-[rgb(235,235,235)] dark:bg-black transition-colors duration-200">
+      <div className="flex flex-col gap-8 bg-[rgb(235,235,235)] dark:bg-black transition-colors duration-100">
         <h2 className={`pb-6`}>About me</h2>
         <p>
           I’m <label>Frontend Developer</label> with experience in{" "}
