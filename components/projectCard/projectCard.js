@@ -3,32 +3,49 @@ import Image from "next/image";
 import { ChevronUp, ArrowRight } from "lucide-react";
 import TechnologyButton from "../technology/technologyButton";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
-const ProjectCard = ({ title, desc, images, technologies }) => {
+const ProjectCard = ({ title, desc, images, technologies, link }) => {
   const [open, setOpen] = useState(false);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    slideTo(0);
+  }, []);
+
+  function slideTo(index) {
+    const container = containerRef.current;
+    if (!container) return;
+    const slideWidth = container.offsetWidth;
+    container.scrollTo({
+      left: slideWidth * index,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <div
-      className={`bg-zinc-900 px-5 py-3 rounded-[20px] max-w-[340px] lg:max-w-[470px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
+      className={`bg-white  dark:bg-zinc-900 dark:text-white px-5 py-3 rounded-[20px] max-w-[340px] lg:max-w-[470px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
         open == true ? "max-h-[1000px]" : "max-h-[7.5rem]"
       }`}
     >
       <div className="flex justify-between items-center">
         <h3 className="text-myGreen text-[1.2rem]">{title}</h3>
         <button onClick={() => setOpen(!open)}>
-          <ChevronUp className="text-white h-10 w-10 " />
+          <ChevronUp className="dark:text-white h-10 w-10 " />
         </button>
       </div>
-
       <p
-        className={`text-white mb-3 transition-all duration-150 leading-8 ${
-          open == true ? "" : "text-opacity-65"
+        className={`text-black dark:text-white mb-3 transition-all duration-150 leading-8 ${
+          open == true ? "" : "text-opacity-50"
         }`}
       >
         {desc}
       </p>
-      <div className="imageContainer flex overflow-x-scroll snap-x snap-mandatory">
+      <div
+        ref={containerRef}
+        className="flex overflow-x-scroll snap-x snap-mandatory hide-scrollbar"
+      >
         {images.map((src, key) => {
           return (
             <Image
@@ -36,14 +53,27 @@ const ProjectCard = ({ title, desc, images, technologies }) => {
               width={500}
               height={500}
               alt="screenshot"
-              className="mx-4 snap-center flex-none"
+              className="mx-4 snap-center flex-none rounded-sm"
               key={key}
             />
           );
         })}
       </div>
-      <div className="flex items-center text-myGreen mt-6">
-        <a className="font-medium">Open project </a>
+      <div className="flex justify-center mt-3">
+        {images.map((_, i) => {
+          return (
+            <button
+              onClick={() => slideTo(i)}
+              key={i}
+              className="h-4 w-4 mx-3 rounded-[100%] border-solid border-[4px] dark:border-white border-zinc-800"
+            ></button>
+          );
+        })}
+      </div>
+      <div className="flex items-center text-myGreen mt-3">
+        <a href={link} target="_blank" className="font-medium">
+          Open project
+        </a>
         <ArrowRight className=" ml-1" />
       </div>
       <div className="technologies mt-6 flex flex-wrap justify-center">
