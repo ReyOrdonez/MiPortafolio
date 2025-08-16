@@ -8,15 +8,29 @@ import { useState, useRef, useEffect } from "react";
 const ProjectCard = ({ title, desc, images, technologies, link }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
+  const [index, setIndex] = useState(null);
 
   useEffect(() => {
     slideTo(0);
+    const container = containerRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const scrollLeft = container.scrollLeft;
+      const slideWidth = container.offsetWidth;
+      const index = Math.round(scrollLeft / slideWidth);
+      setIndex(index);
+    };
+
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
   }, []);
 
   function slideTo(index) {
     const container = containerRef.current;
     if (!container) return;
     const slideWidth = container.offsetWidth;
+    setIndex(index);
     container.scrollTo({
       left: slideWidth * index,
       behavior: "smooth",
@@ -65,7 +79,9 @@ const ProjectCard = ({ title, desc, images, technologies, link }) => {
             <button
               onClick={() => slideTo(i)}
               key={i}
-              className="h-4 w-4 mx-3 rounded-[100%] border-solid border-[4px] dark:border-white border-zinc-800"
+              className={`${
+                index == i && "bg-zinc-800 dark:bg-white"
+              } transition-colors duration-150 ease-linear h-4 w-4 mx-3 rounded-[100%] border-solid border-[3px] dark:border-white border-zinc-800`}
             ></button>
           );
         })}
