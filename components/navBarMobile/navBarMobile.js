@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { AlignJustify } from "lucide-react";
 
 const NavBarMobile = () => {
   const [open, setOpen] = useState(false);
@@ -34,12 +35,9 @@ const NavBarMobile = () => {
           <div className="bg-myGreen min-h-1 mr-[100%] group-hover:mx-0 transition-all duration-[190ms] ease-linear rounded-[1px]"></div>
         </a>
       </div>
-      <button
-        onClick={() => setOpen(!open)}
-        className={`transform ${
-          open == false ? "rotate-0" : "rotate-[300deg]"
-        } ml-5 mt-4 w-0 h-0 border-t-[22px] border-b-[22px] border-l-[38px] border-l-myGreen border-t-transparent border-b-transparent transition-rotate duration-[200ms] ease-in`}
-      ></button>
+      <button onClick={() => setOpen(!open)} className={` ml-5 mt-4 w-0 h-0`}>
+        <AlignJustify className="text-myGreen w-12 h-12" />
+      </button>
     </div>
   );
 };
