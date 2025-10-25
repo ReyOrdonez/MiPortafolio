@@ -39,14 +39,18 @@ const ProjectCard = ({ title, desc, images, technologies, link }) => {
 
   return (
     <div
-      className={`bg-white  dark:bg-zinc-900 dark:text-white px-5 py-3 rounded-[20px] max-w-[340px] lg:max-w-[470px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
+      className={`bg-white  dark:bg-zinc-900 dark:text-white px-5 py-3 rounded-[20px] max-w-[340px] lg:max-w-[570px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
         open == true ? "max-h-[1000px]" : "max-h-[7.5rem]"
       }`}
     >
       <div className="flex justify-between items-center">
         <h3 className="text-myGreen text-[1.2rem]">{title}</h3>
         <button onClick={() => setOpen(!open)}>
-          <ChevronUp className="dark:text-white h-10 w-10 " />
+          <ChevronUp
+            className={`dark:text-white h-10 w-10 transition-all duration-150 ease-out ${
+              open == true && "rotate-180"
+            }`}
+          />
         </button>
       </div>
       <p

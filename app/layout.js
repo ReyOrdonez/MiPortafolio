@@ -32,6 +32,13 @@ export default function RootLayout({ children }) {
         lang="en"
         className={` md:text-[18px] lg:text-[20px] ${poppins.variable} ${inter.variable}`}
       >
+        <head>
+          <title>Rey Isaac Projects</title>
+          <meta
+            name="description"
+            content="Im front end developer specialized in React, Next.js, Redux, and Tailwind CSS."
+          />
+        </head>
         <body
           className={`antialiased bg-[rgb(235,235,235)] text-black dark:bg-black dark:text-white transition-colors duration-100`}
         >

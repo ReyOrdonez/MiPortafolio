@@ -8,7 +8,7 @@ const Skills = () => {
       id="Myskills"
       className={`h-screen mx-5 text-left snap-center flex flex-col justify-center lg:max-w-[90vw]`}
     >
-      <h2 className="pb-10 lg:ml-[19vw]">My skills</h2>
+      <h2 className="pb-10 lg:ml-[20vw]">My skills</h2>
       <div className="flex flex-wrap justify-between lg:ml-[10vw] lg:justify-center">
         <div className="container inline-block size-auto mx-3 my-6 lg:mx-12">
           <Image
