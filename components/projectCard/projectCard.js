@@ -39,7 +39,7 @@ const ProjectCard = ({ title, desc, images, technologies, link }) => {
 
   return (
     <div
-      className={`bg-white  dark:bg-zinc-900 dark:text-white px-5 py-3 rounded-[20px] max-w-[340px] lg:max-w-[570px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
+      className={`bg-white  dark:bg-zinc-900 dark:text-white px-5 py-3 rounded-[20px] max-w-[340px] lg:max-w-[870px] mb-10 overflow-hidden transition-all duration-500 ease-in-out ${
         open == true ? "max-h-[1000px]" : "max-h-[7.5rem]"
       }`}
     >
@@ -68,8 +68,8 @@ const ProjectCard = ({ title, desc, images, technologies, link }) => {
           return (
             <Image
               src={src}
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               alt="screenshot"
               className="mx-4 snap-center flex-none rounded-sm"
               key={key}

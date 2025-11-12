@@ -6,7 +6,7 @@ const ContactMe = () => {
       id="ContactMe"
       className="h-screen flex flex-col snap-center text-left mx-5"
     >
-      <div className="max-w-[800px] lg:ml-[20vw] mt-[25vh] bg-[rgb(235,235,235)] dark:bg-black transition-colors duration-100">
+      <div className="max-w-[600px] lg:ml-[20vw] mt-[25vh] bg-[rgb(235,235,235)] dark:bg-black transition-colors duration-100">
         <h2>Let's work together!</h2>
         <p className="mt-5">
           I'm open to both <label>remote</label> and <label>on-site </label>
