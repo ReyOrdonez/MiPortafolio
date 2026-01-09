@@ -71,7 +71,7 @@ const ProjectCard = ({ title, desc, images, technologies, link }) => {
               width={1000}
               height={1000}
               alt="screenshot"
-              className="mx-4 snap-center flex-none rounded-sm"
+              className="mx-4 snap-center rounded-sm"
               key={key}
             />
           );
