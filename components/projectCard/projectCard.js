@@ -68,8 +68,8 @@ const ProjectCard = ({ title, desc, images, technologies, link }) => {
           return (
             <Image
               src={src}
-              width={1500}
-              height={1500}
+              width={1000}
+              height={1000}
               alt="screenshot"
               className="mx-4 snap-center flex-none rounded-sm"
               key={key}

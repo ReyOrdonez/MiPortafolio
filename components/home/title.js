@@ -13,8 +13,7 @@ const Title = () => {
           <h1 className="inline text-myGreen ">Hello!</h1>
           <h2>My name is Rey Isaac</h2>
           <h3 className="mt-3 mb-12 ">
-            Code, design, interaction. This is my portfolio, where creativity
-            meets technology.
+            Frontend Developer focused on building modern web experiences
           </h3>
         </div>
 
