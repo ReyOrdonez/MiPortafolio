@@ -1,5 +1,3 @@
-"use client";
-
 const ContactButton = ({ className }) => {
   return (
     <a

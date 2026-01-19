@@ -1,9 +1,7 @@
-"use client";
-
 import ProjectCard from "../projectCard/projectCard";
 import projects from "../../data/projects";
 
-const Projects = () => {
+function Projects() {
   return (
     <section
       id="MyProjects"
@@ -24,6 +22,6 @@ const Projects = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Projects;

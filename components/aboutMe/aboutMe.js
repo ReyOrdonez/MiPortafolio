@@ -1,6 +1,4 @@
-import React from "react";
-
-const AboutMe = () => {
+function AboutMe() {
   return (
     <section
       id="About"
@@ -26,6 +24,6 @@ const AboutMe = () => {
       </div>
     </section>
   );
-};
+}
 
 export default AboutMe;

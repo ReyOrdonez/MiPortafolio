@@ -1,8 +1,5 @@
-"use client";
-
 import ContactButton from "@/components/contactButton/contactButton";
-
-const Title = () => {
+function Title() {
   return (
     <section
       id="Home"
@@ -22,6 +19,6 @@ const Title = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Title;
