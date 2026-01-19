@@ -1,5 +1,3 @@
-"use client";
-
 import Title from "@/components/home/title";
 import AboutMe from "@/components/aboutMe/aboutMe";
 import ToggleThemeButtonMobile from "@/components/toggleThemeButtonMobile/toggleThemeButtonMobile";

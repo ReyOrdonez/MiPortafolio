@@ -1,5 +1,3 @@
-"use client";
-
 const ContactMe = () => {
   return (
     <section
@@ -42,7 +40,7 @@ const ContactMe = () => {
         </div>
       </div>
       <a
-        href="/myCv.pdf"
+        href="/cv.pdf"
         download="ReyIsaac.pdf"
         className="lg:ml-[22%] mt-20 font-poppins font-light px-4 py-1 text-[1.8rem] inline-block shrink-0 grow-0 self-start relative transition-all duration-[199ms] group hover:text-slate-200 text-myGreen border-solid border-[3px] border-myGreen rounded-md "
       >

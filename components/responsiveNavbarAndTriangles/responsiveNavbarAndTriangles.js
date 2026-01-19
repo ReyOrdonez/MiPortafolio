@@ -1,5 +1,3 @@
-"use client";
-
 import { useIsMobile } from "@/app/hooks/useIsMobile";
 import NavBar from "../navBar/navBar";
 import NavBarMobile from "../navBarMobile/navBarMobile";
